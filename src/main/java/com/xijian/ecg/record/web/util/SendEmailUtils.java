@@ -14,9 +14,9 @@ import java.util.Properties;
  * Created by 邵伟 on 2017/5/21 0021.
  */
 public class SendEmailUtils {
-    private  String account = "technical@mhealth365.com";//登录用户名
-    private  String pass = "432YO6Xu6mhlokGEieF";        //登录密码
-    private  String from = "technical@mhealth365.com";        //发件地址
+    private  String account;//登录用户名
+    private  String pass;        //登录密码
+    private  String from;        //发件地址
     private  String host = "smtp.exmail.qq.com";        //服务器地址
     private  String port = "465";        //端口
     private  String protocol = "smtp"; //协议
