@@ -2,7 +2,7 @@ Welcome to the redis-monitor wiki!
 
 1.主机管理
 添加需要监控的主机
-redis-monitor/screenshot/主机管理.png
+![主机管理](https://github.com/shaowei3384/redis-monitor/screenshot/%E4%B8%BB%E6%9C%BA%E7%AE%A1%E7%90%86.png)
 2.配置管理
 添加一些公共配置
 smtp.toUser	发送人，多个逗号分隔
