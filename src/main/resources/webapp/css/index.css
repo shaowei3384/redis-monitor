@@ -1,0 +1,25 @@
+.page {
+    text-align: center;
+}
+select {
+    background: transparent;
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 34px;
+    -webkit-appearance: none; /*for chrome*/
+}
+input {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 200px;
+    height: 40px;
+}
+.background{
+	height:100%;
+	background-image:  url("../image/logo7.jpg");
+    background-size:contain;
+}

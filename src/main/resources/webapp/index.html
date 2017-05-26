@@ -1,0 +1,136 @@
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link href="css/index.css" rel="stylesheet" type="text/css">
+      <link href="css/layui.css" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="js/highcharts.js"></script>
+      <script type="text/javascript" src="js/dark-blue.js"></script>
+      <script type="text/javascript" src="js/jquery.form.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+  </head>
+  <body>
+  <div class="header-content">
+  </div>
+  <div class="background">
+  <div class="layui-tab layui-tab-card">
+      <ul class="layui-tab-title">
+          <li class="layui-this">主机管理</li>
+          <li>配置管理</li>
+          <li>统计报表</li>
+          <li>预警</li>
+          <li>详细信息</li>
+      </ul>
+      <div class="layui-tab-content" style="height: 100px;">
+          <div class="layui-tab-item layui-show">
+              <div>
+                  <button class="layui-btn" id="addHost">添加主机</button>
+                  <table class="layui-table">
+                      <colgroup>
+                          <col width="150">
+                          <col width="200">
+                          <col>
+                      </colgroup>
+                      <thead>
+                      <tr>
+                          <th>IP</th>
+                          <th>PORT</th>
+                          <th>密码</th>
+                          <th>操作</th>
+                      </tr>
+                      </thead>
+                      <tbody id="host">
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+          <div class="layui-tab-item">
+              <div>
+                  <button class="layui-btn" id="addConfig">修改配置</button>
+                  <table class="layui-table">
+                      <colgroup>
+                          <col width="150">
+                          <col width="200">
+                          <col>
+                      </colgroup>
+                      <thead>
+                      <tr>
+                          <th>名称</th>
+                          <th>值</th>
+                      </tr>
+                      </thead>
+                      <tbody id="config">
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+          <div class="layui-tab-item">
+              <div>
+                  <label>监控主机端口</label>
+                  <select id="ipport_chart" lay-verify="required"></select>
+                  <button class="layui-btn" id="chartBtn">查看报表</button>
+              </div>
+              <div>
+                  <table class="layui-table">
+                      <colgroup>
+                          <col width="150">
+                          <col width="200">
+                          <col>
+                      </colgroup>
+                      <thead>
+                      <tr>
+                          <th>系统位数</th>
+                          <th>操作系统</th>
+                          <th>进程号</th>
+                          <th>redis版本</th>
+                          <th>端口号</th>
+                          <th>运行天数</th>
+                          <th>运行秒数</th>
+                      </tr>
+                      </thead>
+                      <tbody id="os">
+                      </tbody>
+                  </table>
+              </div>
+              <div id="chart"></div>
+          </div>
+          <div class="layui-tab-item">
+              <div>
+                  <table class="layui-table">
+                      <colgroup>
+                          <col width="150">
+                          <col width="200">
+                          <col>
+                      </colgroup>
+                      <thead>
+                      <tr>
+                          <th>mertric</th>
+                          <th>最大值</th>
+                          <th>是否允许为空</th>
+                          <th>是否可用</th>
+                          <th>操作</th>
+                      </tr>
+                      </thead>
+                      <tbody id="alerm">
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+          <div class="layui-tab-item">
+              <div>
+                  <label>监控主机端口</label>
+                  <select id="ipport" lay-verify="required"></select>
+                  <button class="layui-btn" id="slowlogBtn">慢查日志</button>
+                  <button class="layui-btn" id="clientListBtn">客户端连接</button>
+                  <button class="layui-btn" id="cmdListBtn">命令耗时</button>
+                  <button class="layui-btn" id="dbBtn">DB容量</button>
+              </div>
+              <div id="descTable"></div>
+          </div>
+      </div>
+  </div>
+  </div>
+  <script type="text/javascript" src="layui.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+/target
+*/classes
+*/test-classes
+*/target
+/bin
+*.settings
+/.classpath
+/.project
+/src/main/webapp/WEB-INF/classes/
+/.idea
+record.iml
