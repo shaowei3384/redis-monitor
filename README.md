@@ -1,4 +1,6 @@
 Welcome to the redis-monitor wiki!
+打包： mvn package
+运行: java -jar redis-monitor.jar log=xxxx.log4j.xml config=xxxxxx.properties
 
 1.主机管理
 添加需要监控的主机
