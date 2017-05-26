@@ -21,7 +21,7 @@ public class SendEmailUtils {
     private  String port = "465";        //端口
     private  String protocol = "smtp"; //协议
 
-    private  String[] to = {"wei.shao@mhealth365.com"};
+    private  String[] to;
 
     public  String getAccount() {
         return account;
